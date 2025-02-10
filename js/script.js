@@ -1,14 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Cargar el header y footer
     loadHTML('header', '../includes/header.html').then(() => {
+        // Aplicar el tema guardado o el predeterminado (modo oscuro)
         const savedTheme = localStorage.getItem('theme') || 'dark';
         applyTheme(savedTheme);
 
+        // Escuchar cambios en el switch
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
-            themeToggle.checked = savedTheme === 'light';
+            themeToggle.checked = savedTheme === 'light'; // Marcar el switch si el tema es claro
             themeToggle.addEventListener('change', toggleTheme);
         }
 
+        // Efecto de cambio de color en el header al hacer scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.apple-header');
             if (header) {
@@ -21,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Cargar el footer
     loadHTML('footer', '../includes/footer.html');
 });
 
@@ -33,13 +38,19 @@ function applyTheme(theme) {
     localStorage.setItem('theme', theme);
 }
 
+/**
+ * Función para cambiar entre temas
+ */
 function toggleTheme() {
     const newTheme = this.checked ? 'light' : 'dark';
     applyTheme(newTheme);
 }
 
-
-// Función para cargar un archivo HTML
+/**
+ * Función para cargar un archivo HTML
+ * @param {string} elementId - ID del elemento donde se cargará el contenido
+ * @param {string} filePath - Ruta del archivo HTML a cargar
+ */
 function loadHTML(elementId, filePath) {
     return fetch(filePath)
         .then(response => response.text())

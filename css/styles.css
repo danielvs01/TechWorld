@@ -125,7 +125,6 @@ h2 {
 
 /* Estilos de los botones de navegación */
 .swiper-button-next, .swiper-button-prev {
-    background-color: var(--carrusel-caption-bg);
     padding: 10px;
     border-radius: 50%;
     width: 40px;

@@ -1,11 +1,36 @@
+/* Tema oscuro (predeterminado) */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #fff;
+    --section-background: #1e1e1e;
+    --section-border: #333;
+    --heading-color: #fff;
+    --paragraph-color: #ccc;
+    --link-color: #4CAF50;
+    --link-hover-color: #45a049;
+}
+
+/* Tema claro */
+[data-theme="light"] {
+    --background-color: #fff;
+    --text-color: #000;
+    --section-background: #f4f4f4;
+    --section-border: #ddd;
+    --heading-color: #2d2d2d;
+    --paragraph-color: #555;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+}
+
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Georgia', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 /* Estilos para las secciones */
@@ -13,16 +38,17 @@ section {
     padding: 40px 20px;
     margin: 20px auto;
     max-width: 900px;
-    background-color: #fff;
+    background-color: var(--section-background);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--section-border);
 }
 
 /* Títulos principales */
 h2 {
     font-size: 2rem;
-    color: #2d2d2d;
-    border-bottom: 2px solid #2d2d2d;
+    color: var(--heading-color);
+    border-bottom: 2px solid var(--heading-color);
     padding-bottom: 8px;
     margin-bottom: 20px;
 }
@@ -30,7 +56,7 @@ h2 {
 /* Títulos secundarios */
 h3 {
     font-size: 1.5rem;
-    color: #444;
+    color: var(--heading-color);
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -38,7 +64,7 @@ h3 {
 /* Párrafos */
 p {
     font-size: 1rem;
-    color: #555;
+    color: var(--paragraph-color);
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -51,12 +77,24 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    color: var(--paragraph-color);
 }
 
 /* Resaltado de texto */
 strong {
     font-weight: bold;
-    color: #2d2d2d;
+    color: var(--heading-color);
+}
+
+/* Enlaces */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--link-hover-color);
 }
 
 /* Espaciado y bordes */
