@@ -1,0 +1,65 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos principales */
+h2 {
+    font-size: 2rem;
+    color: #2d2d2d;
+    border-bottom: 2px solid #2d2d2d;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Títulos secundarios */
+h3 {
+    font-size: 1.5rem;
+    color: #444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Listado de valores */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Resaltado de texto */
+strong {
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+/* Espaciado y bordes */
+section + section {
+    margin-top: 40px;
+}
