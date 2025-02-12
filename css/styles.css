@@ -150,7 +150,7 @@ h2 {
 
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #4CAF50;
+    background: #008CBA;
 }
 
 /* Estilos para la sección destacada */
@@ -211,7 +211,7 @@ h2 {
 .destacado-card .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #1417bdc2;
+    background-color: #008CBA;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -220,7 +220,7 @@ h2 {
 }
 
 .destacado-card .btn:hover {
-    background-color: #0e108877;
+    background-color: #007096;
 }
 
 /* Diseño responsive */
