@@ -43,8 +43,8 @@ function toggleTheme() {
 
 /**
  * Función para cargar un archivo HTML
- * @param {string} elementId - ID del elemento donde se cargará el contenido
- * @param {string} filePath - Ruta del archivo HTML a cargar
+ * @param {string} elementId
+ * @param {string} filePath
  */
 function loadHTML(elementId, filePath) {
     return fetch(filePath)
@@ -55,6 +55,7 @@ function loadHTML(elementId, filePath) {
         .catch(error => console.error('Error al cargar el archivo:', error));
 }
 
+/*Carrusel*/
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper('.swiper-container', {
         loop: true,
@@ -443,7 +444,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 applyLanguageToHeaderFooter();
             });
     
-        // Aplicar el idioma guardado
         let savedLang = localStorage.getItem("idioma") || "es";
         changeLanguage(savedLang);
     });
