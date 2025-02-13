@@ -1,4 +1,5 @@
 <header class="apple-header">
+    <script src="js/script.js"></script>
     <nav>
         <div class="logo">
             <a href="#">
@@ -6,16 +7,16 @@
             </a>
         </div>
         <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../html/nosotros.html">Nosotros</a></li>
-            <li><a href="../html/productos.html">Productos</a></li>
-            <li><a href="../html/servicios.html">Servicios</a></li>
-            <li><a href="../html/contacto.html">Contacto</a></li>
-            <li><a href="../html/clientes.html">Clientes</a></li>
-            <li><a href="../html/empleo.html">Empleo</a></li>
-            <li><a href="../html/blog.html">Blog</a></li>
-            <li><a href="../html/faq.html">Faq</a></li>
-            <li><a href="../html/terminos.html">Términos</a></li>
+            <li><a id="inicio" href="../index.html">Inicio</a></li>
+            <li><a id="nosotros" href="../html/nosotros.html">Nosotros</a></li>
+            <li><a id="productos" href="../html/productos.html">Productos</a></li>
+            <li><a id="servicios" href="../html/servicios.html">Servicios</a></li>
+            <li><a id="contacto" href="../html/contacto.html">Contacto</a></li>
+            <li><a id="clientes" href="../html/clientes.html">Clientes</a></li>
+            <li><a id="empleo" href="../html/empleo.html">Empleo</a></li>
+            <li><a id="blog" href="../html/blog.html">Blog</a></li>
+            <li><a id="faq" href="../html/faq.html">Faq</a></li>
+            <li><a id="terminos" href="../html/terminos.html">Términos y Condiciones</a></li>
         </ul>
 
         <div class="switch-container">
@@ -25,6 +26,8 @@
             </label>
         </div>
 
-        <button id="language-toggle">🌍 Inglés</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
+        
     </nav>
-</header>
+</header>                      

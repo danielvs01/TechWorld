@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
-    <div id="header"></div>
 
     <main class="blog-container">
         <article class="blog-card">
-            <h2>Tendencias en Inteligencia Artificial</h2>
+            <h2 id="tendencia1">Tendencias en Inteligencia Artificial</h2>
             <img src="../img/ia.jpeg" alt="Tendencias en Inteligencia Artificial" class="blog-card img">
-            <p>Descubre cómo la IA está revolucionando la industria tecnológica...</p>
-            <button class="share-btn" onclick="shareOnFacebook()">Compartir en Facebook</button>
+            <p id="texto1">Descubre cómo la IA está revolucionando la industria tecnológica...</p>
+            <button class="share-btn" id="compartir1" onclick="shareOnFacebook()">Compartir en Facebook</button>
             <div class="fb-comments" data-href="URL_DEL_ARTICULO" data-width="100%" data-numposts="5"></div>
         </article>
 
         <article class="blog-card">
-            <h2>Innovaciones en Hardware</h2>
+            <h2 id="tendencia2">Innovaciones en Hardware</h2>
             <img src="../img/5090.png" alt="Tendencias en Inteligencia Artificial" class="blog-card img">
-            <p>Las últimas tarjetas gráficas</p>
-            <button class="share-btn" onclick="shareOnFacebook()">Compartir en Facebook</button>
+            <p id="texto2">Las últimas tarjetas gráficas</p>
+            <button class="share-btn" id="compartir1" onclick="shareOnFacebook()">Compartir en Facebook</button>
             <div class="fb-comments" data-href="URL_DEL_ARTICULO" data-width="100%" data-numposts="5"></div>
         </article>
     </main>
@@ -40,7 +39,6 @@
 
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v22.0"></script>
-    <div id="footer"></div>
     <script src="../js/script.js"></script>
 </body>
 </html>

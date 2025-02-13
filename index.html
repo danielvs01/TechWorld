@@ -8,82 +8,78 @@
     <link rel="stylesheet" href="css/components.css"> 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v18.0" once="XYZ">
     </script>
 </head>
 <body>
-    <div id="header"></div>
+
 
     <main style="padding-top: 80px;">
     </main>
 
     <div class="hero-content">
-        <h1>Bienvenidos</h1>
+        <h1 id="bienvenidos">Bienvenidos</h1>
     </div>
 
     <div class="hero"></div>
 
     <section class="destacados">
-        <h2>Productos y Servicios Destacados</h2>
+        <h2 id="productos_destacados">Productos y Servicios Destacados</h2>
         <div class="destacados-container">
             <div class="destacado-card">
                 <img src="img/macbookpro.png" alt="Producto 1">
-                <h3>MacBook Pro</h3>
-                <p>Creado para la inteligencia de Apple. Personal, privado, poderoso.</p>
-                <a href="html/productos.html" class="btn">Más información</a>
+                <h3 id="macbook_pro">MacBook Pro</h3>
+                <p id="descripcion_macbook">Creado para la inteligencia de Apple. Personal, privado, poderoso.</p>
+                <a href="html/productos.html" class="btn" id="mas_informacion">Más información</a>
             </div>
             <div class="destacado-card">
                 <img src="img/ipadpro.png" alt="Producto 2">
-                <h3>Ipad Pro</h3>
-                <p>Ultra Retina XDR. La pantalla más avanzada del mundo. Brillo extremo y contraste preciso.</p>
-                <a href="html/productos.html" class="btn">Más información</a>
+                <h3 id="ipad_pro">iPad Pro</h3>
+                <p id="descripcion_ipad">Ultra Retina XDR. La pantalla más avanzada del mundo. Brillo extremo y contraste preciso.</p>
+                <a href="html/productos.html" class="btn" id="mas_informacion">Más información</a>
             </div>
             <div class="destacado-card">
                 <img src="img/soporte.png" alt="Servicio 1">
-                <h3>Mantenimiento de Equipos</h3>
-                <p>Servicio técnico especializado para mantener tus dispositivos en óptimas condiciones.</p>
-                <a href="html/servicios.html" class="btn">Más información</a>
+                <h3 id="mantenimiento">Mantenimiento de Equipos</h3>
+                <p id="descripcion_mantenimiento">Servicio técnico especializado para mantener tus dispositivos en óptimas condiciones.</p>
+                <a href="html/servicios.html" class="btn" id="mas_informacion">Más información</a>
             </div>
             <div class="destacado-card">
                 <img src="img/desarrollo.png" alt="Servicio 2">
-                <h3>Desarrollo Web</h3>
-                <p>Expertos en desarrollo web listos para ayudarte a crear la página de tus sueños.</p>
-                <a href="html/servicios.html" class="btn">Más información</a>
+                <h3 id="desarrollo_web">Desarrollo Web</h3>
+                <p id="descripcion_desarrollo">Expertos en desarrollo web listos para ayudarte a crear la página de tus sueños.</p>
+                <a href="html/servicios.html" class="btn" id="mas_informacion">Más información</a>
             </div>
         </div>
     </section>
     
     <section class="carrusel">
-        <h2>Novedades Tecnológicas</h2>
+        <h2 id="novedades">Novedades Tecnológicas</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <p>Nueva MacBook Air.</p>
+                    <p id="nueva_macbook">Nueva MacBook Air.</p>
                     <img src="img/laptop.png" alt="Nueva laptop con IA">
                 </div>
                 <div class="swiper-slide">
-                    <p>El nuevo iPhone 16 Pro.</p>
+                    <p id="nuevo_iphone">El nuevo iPhone 16 Pro.</p>
                     <img src="img/iphone.png" alt="Smartphone flexible">
                 </div>
                 <div class="swiper-slide">
-                    <p>Nueva iPad Air.</p>
+                    <p id="nuevo_ipad">Nueva iPad Air.</p>
                     <img src="img/ipad.png" alt="Coche eléctrico avanzado">
                 </div>
             </div>
-    
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-    
-            <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <div style="text-align: center; margin-top: 20px;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=127.0.0.1:5500/" target="_blank" style="background-color: #1877f2; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">📤 Compartir en Facebook</a>
+        <a id="compartir_facebook" href="https://www.facebook.com/sharer/sharer.php?u=127.0.0.1:5500/" target="_blank" style="background-color: #1877f2; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px;">📤 Compartir en Facebook</a>
     </div></div>
 
-    <div id="footer"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

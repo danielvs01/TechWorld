@@ -66,7 +66,7 @@ textarea:focus {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-button {
+form > button {
     padding: 0.75rem 1.5rem;
     margin-right: 1rem;
     border: none;
@@ -78,15 +78,15 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button[type="reset"] {
+form > button[type="reset"] {
     background-color: #6c757d;
 }
 
-button:hover {
+form > button:hover {
     background-color: #0056b3;
 }
 
-button[type="reset"]:hover {
+form > button[type="reset"]:hover {
     background-color: #5a6268;
 }
 
