@@ -73,33 +73,28 @@
 }
 
 /* Estilos para el footer */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #222;
     color: white;
     padding: 1rem;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    align-self: flex-end;
-    position: relative;
-    bottom: 0;
     width: 100%;
-    z-index: 750;
-}
-
-footer p {
-    margin: 0.5rem 0;
-}
-
-footer a {
-    color: #a3a3a3;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    margin-top: auto;
 }
 
 /* Estilos para el switch */
@@ -187,3 +182,29 @@ input:checked + .slider:before {
     color: #555; /* Color al pasar el mouse */
 }
 
+.language-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.language-buttons button {
+    background: none;
+    border: 1px solid #ffffff;
+    color: #a09f9f;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.language-buttons button:hover {
+    background: #ffffff;
+    color: #a09f9f;
+}
+
+.language-buttons button:active {
+    transform: scale(0.96);
+}

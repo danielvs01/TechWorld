@@ -1,18 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Cargar el header y footer
     loadHTML('header', '../includes/header.html').then(() => {
-        // Aplicar el tema guardado o el predeterminado (modo oscuro)
         const savedTheme = localStorage.getItem('theme') || 'dark';
         applyTheme(savedTheme);
 
-        // Escuchar cambios en el switch
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
-            themeToggle.checked = savedTheme === 'light'; // Marcar el switch si el tema es claro
+            themeToggle.checked = savedTheme === 'light';
             themeToggle.addEventListener('change', toggleTheme);
         }
 
-        // Efecto de cambio de color en el header al hacer scroll
         window.addEventListener('scroll', () => {
             const header = document.querySelector('.apple-header');
             if (header) {
@@ -25,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Cargar el footer
     loadHTML('footer', '../includes/footer.html');
 });
 
@@ -279,6 +274,7 @@ const translations = {
         "textotermino7" : "Si tienes alguna pregunta sobre estos términos, puedes contactarnos a través de nuestra sección de contacto.",
         "footer1" : "2025 TechWorld. Todos los derechos reservados.",
         "footer2" : "Síguenos en redes sociales:",
+        "bienvenida" : "Bienvenido a TechWorld",
 
 
 
@@ -407,6 +403,7 @@ const translations = {
         "textotermino7": "If you have any questions about these terms, you can contact us through our contact section.",
         "footer1" : "2025 TechWorld. All rights reserved.",
         "footer2" : "Follow us on social media:",
+        "bienvenida" : "Welcome to TechWorld",
     }
 };
 
@@ -433,26 +430,12 @@ document.addEventListener("DOMContentLoaded", function() {
     changeLanguage(savedLang);
 });
 
-
-
-
-
-
-
     function applyLanguageToHeaderFooter() {
         let savedLang = localStorage.getItem("idioma") || "es";
         changeLanguage(savedLang);
     }
 
     document.addEventListener("DOMContentLoaded", function() {
-        // Cargar header y footer
-        fetch('../includes/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.body.insertAdjacentHTML('afterbegin', data);
-                applyLanguageToHeaderFooter();
-            });
-    
         fetch('../includes/footer.html')
             .then(response => response.text())
             .then(data => {
